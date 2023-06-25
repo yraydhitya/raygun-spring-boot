@@ -17,7 +17,7 @@
 package com.midtrans.raygun;
 
 /**
- * Interface to be implemented by classes that register excluded Raygun {@link Exceptions}.
+ * Interface to be implemented by classes that register excluded Raygun {@link Exception}s.
  *
  * @author Raydhitya Yoseph
  */
