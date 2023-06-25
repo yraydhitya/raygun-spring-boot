@@ -1,0 +1,20 @@
+image: gradle:7.5.1-jdk11
+
+before_script:
+  - GRADLE_USER_HOME="$(pwd)/.gradle"
+  - export GRADLE_USER_HOME
+
+test:
+  stage: test
+  script: gradle raygun-spring-boot-starter:test raygun-spring-boot-starter:jacocoTestReport raygun-spring-boot-starter:jacocoTestCoverageVerification
+  cache:
+    key: "$CI_COMMIT_REF_NAME"
+    policy: push
+    paths:
+      - .gradle
+      - raygun-spring-boot-starter/build
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - raygun-spring-boot-starter/build/test-results/test/TEST-*.xml
