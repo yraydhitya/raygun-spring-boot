@@ -68,6 +68,15 @@ java {
     withJavadocJar()
 }
 
+javadoc {
+    (options as StandardJavadocDocletOptions)
+        .tags(
+            "apiNote:a:API Notes:",
+            "implSpec:a:Implementation Specifications:",
+            "implNote:a:Implementation Notes:"
+        )
+}
+
 publishing {
     publications {
         maven(MavenPublication) {
