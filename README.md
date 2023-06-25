@@ -17,7 +17,7 @@ Add the dependency in the implementation configuration
 
 ```
 dependencies {
-    implementation 'com.midtrans:raygun-spring-boot-starter:0.4.1'
+    implementation 'com.midtrans:raygun-spring-boot-starter:0.5.0'
 }
 ```
 
