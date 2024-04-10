@@ -13,6 +13,21 @@
 
 ## Usage
 
+Add the the `jitpack` repository.
+
+```
+repositories {
+    mavenCentral()
+    maven {
+        name 'jitpack'
+        url 'https://www.jitpack.io'
+        content {
+            includeGroup 'com.github.yraydhitya'
+        }
+    }
+}
+```
+
 Add the dependency in the implementation configuration.
 
 ```
@@ -43,6 +58,8 @@ class UserService {
     }
 }
 ```
+
+The Javadoc can be accessed [here](https://javadoc.jitpack.io/com/github/yraydhitya/raygun-spring-boot/0.8.1/javadoc/).
 
 ## Support
 
