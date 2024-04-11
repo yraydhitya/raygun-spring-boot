@@ -32,7 +32,7 @@ Add the dependency in the implementation configuration.
 
 ```
 dependencies {
-    implementation 'com.midtrans:raygun-spring-boot-starter:0.8.1'
+    implementation 'com.github.yraydhitya:raygun-spring-boot-starter:0.8.1'
 }
 ```
 
